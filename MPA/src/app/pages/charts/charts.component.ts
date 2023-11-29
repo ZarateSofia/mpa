@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-charts',
-  standalone: true,
+  standalone: true, 
   imports: [CommonModule],
   templateUrl: './charts.component.html',
   styleUrl: './charts.component.css'
