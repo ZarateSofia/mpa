@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SidebarService } from '../../servicios/sidebar.service';
 
 @Component({
   selector: 'app-navbar',
@@ -9,5 +10,8 @@ import { CommonModule } from '@angular/common';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-
+  constructor(private sidebarService: SidebarService){}
+  toggleSidebar() {
+    this.sidebarService.toggleSidebar();
+  }
 }

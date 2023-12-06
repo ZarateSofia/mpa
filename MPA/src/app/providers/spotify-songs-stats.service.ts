@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class SpotifySongsStatsService {
-  private URL: string = 'https://spotifystats-1d226-default-rtdb.firebaseio.com/collection.json';
+  private URL: string = 'https://pruebaspotify-dd602-default-rtdb.firebaseio.com/.json';
 
 
   constructor(private http:HttpClient) { }
