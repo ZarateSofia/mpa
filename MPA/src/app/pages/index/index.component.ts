@@ -17,7 +17,7 @@ import { SpotifySongsStatsService } from '../../providers/spotify-songs-stats.se
 })
 export class IndexComponent {
 
-  public data: Cancion[] = [];
+  private data: Cancion[] = [];
   constructor(private dataProvider: SpotifySongsStatsService){}
   ngOnInit(){
     this.dataProvider.getResponse().subscribe((response) => { 
