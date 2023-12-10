@@ -17,12 +17,12 @@ import { SpotifySongsStatsService } from '../../providers/spotify-songs-stats.se
 })
 export class IndexComponent {
 
-  private data: Cancion[] = [];
+  data: Cancion[] = [];
   constructor(private dataProvider: SpotifySongsStatsService){}
   ngOnInit(){
     this.dataProvider.getResponse().subscribe((response) => { 
       let dataArray = (response as Cancion[]); 
-      this.data = dataArray.slice(0,10);
+      this.data = dataArray.slice(0,20);
   })
 }
 }
